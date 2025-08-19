@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS基础语法</title>
+</head>
+<body>
+        
+    <script>
+        //方式一: 写入浏览器的body区域
+        document.write("Hello JS (document.write)");
+
+        //方式二: 弹出框
+        window.alert("Hello JS (window.alert)");
+
+        //方式三: 控制台
+        console.log("Hello JS (console.log)")
+        
+    //自定义对象
+    let user = {
+        name: "Tom",
+        age: 10,
+        gender: "男",
+        sing(){
+             console.log("悠悠的唱着最炫的民族风~");
+         }
+    }
+    console.log(JSON.stringify(user));
+    let user2='{"name":"Tom","age":10,"gender":"男"}';
+    console.log(JSON.parse(user2).age);
+    
+    console.log(user.name);
+    user.sing();
+
+    </script>
+   
+    <script src="js/02.js"></script></scrip>
+    <script src="js/03function.js"></script>
+    
+</body>
+</html>

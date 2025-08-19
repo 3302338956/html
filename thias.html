@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tlias智能学习辅助系统</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+        }
+        .search-bar {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .search-bar input, .search-bar select, .search-bar button {
+            margin: 5px;
+            padding: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f2f2f2;
+        }
+        table tr:hover {
+            background-color: #f2e2e2;
+        }
+        .logout {
+            float: right;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Tlias智能学习辅助系统</h2>
+            <button class="logout">退出登录</button>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="姓名">
+            <select>
+                <option value="gender">性别</option>
+            </select>
+            <select>
+                <option value="position">职位</option>
+            </select>
+            <button>查询</button>
+            <button>清空</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>头像</th>
+                    <th>职位</th>
+                    <th>入职日期</th>
+                    <th>最后操作时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>令狐冲</td>
+                    <td>男</td>
+                    <td>👨</td>
+                    <td>讲师</td>
+                    <td>2021-03-15</td>
+                    <td>2023-07-30T12:00:00Z</td>
+                    <td>
+                        <button>编辑</button>
+                        <button>删除</button>
+                    </td>
+                </tr>
+               
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
